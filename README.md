@@ -1,48 +1,17 @@
-# Laura Clín — site pronto para GitHub + Vercel
+# Laura Clín — Site Vercel sem imagens quebradas
 
-Este projeto é um site estático em HTML/CSS/JS, pronto para publicar na Vercel.
+Esta versão é all-in-one: as imagens e a logo estão embutidas diretamente no `index.html`.
 
-## Estrutura
+## Como corrigir o site publicado
 
-- `index.html` — página principal do site
-- `assets/` — imagens, logo e favicon
-- `vercel.json` — configuração para deploy na Vercel
-- `package.json` — apenas scripts opcionais para testar localmente
+1. Abra o repositório no GitHub.
+2. Apague o `index.html` antigo.
+3. Envie este novo `index.html`.
+4. Confirme o commit.
+5. A Vercel vai fazer deploy automático.
 
-## Como subir pelo GitHub sem usar terminal
+Se não atualizar, na Vercel clique em **Deployments > Redeploy**.
 
-1. Entre no GitHub.
-2. Clique em **New repository**.
-3. Nome sugerido: `laura-clin-site`.
-4. Deixe como **Public** ou **Private**.
-5. Clique em **Create repository**.
-6. Clique em **uploading an existing file**.
-7. Arraste todos os arquivos desta pasta para o GitHub: `index.html`, `assets`, `vercel.json`, `package.json`, `.gitignore`, `.nojekyll` e este `README.md`.
-8. Clique em **Commit changes**.
+## Por que esta versão resolve?
 
-## Como publicar na Vercel
-
-1. Entre na Vercel.
-2. Clique em **Add New > Project**.
-3. Escolha o repositório `laura-clin-site`.
-4. Em framework, pode deixar como **Other**.
-5. Não precisa configurar build.
-6. Clique em **Deploy**.
-
-## Como testar no computador
-
-Com Python instalado, rode:
-
-```bash
-python -m http.server 3000
-```
-
-Depois abra no navegador:
-
-```text
-http://localhost:3000
-```
-
-## Observação
-
-O site foi organizado para funcionar em hospedagem normal, com imagens na pasta `assets`. No Vercel, os caminhos das imagens funcionam diretamente.
+No deploy anterior, o HTML estava chamando arquivos em `/assets/...`, mas a Vercel não encontrou essa pasta/arquivos. Nesta versão, não existe dependência de pasta de imagens: tudo está dentro do HTML.
