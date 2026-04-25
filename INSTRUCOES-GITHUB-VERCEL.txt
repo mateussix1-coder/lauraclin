@@ -1,0 +1,13 @@
+PASSO A PASSO RÁPIDO
+
+1. Descompacte este ZIP.
+2. Crie um repositório no GitHub chamado laura-clin-site.
+3. Suba todos os arquivos da pasta para esse repositório.
+4. Entre na Vercel > Add New > Project.
+5. Selecione o repositório.
+6. Framework: Other.
+7. Build command: deixe vazio.
+8. Output directory: deixe vazio.
+9. Clique em Deploy.
+
+Depois que a Vercel gerar o link, use esse link na bio do Instagram.

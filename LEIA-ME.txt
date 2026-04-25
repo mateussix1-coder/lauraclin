@@ -1,0 +1,6 @@
+Laura Clín — versão mobile corrigida
+
+1) Para hospedagem normal: envie a pasta inteira mantendo index.html e assets juntos.
+2) Para Google Sites: use o arquivo google-sites-embed.html. As imagens estão embutidas no próprio código para não quebrar.
+3) No Google Sites, depois de incorporar, aumente a altura do bloco incorporado para exibir todo o site.
+4) A versão foi feita responsiva normal: não é mockup de celular; abre como site comum no navegador mobile e também funciona no desktop.

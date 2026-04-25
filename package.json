@@ -1,0 +1,10 @@
+{
+  "name": "laura-clin-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional mobile-first da Laura Clín para deploy na Vercel.",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 3000"
+  }
+}
